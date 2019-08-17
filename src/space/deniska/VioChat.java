@@ -65,7 +65,7 @@ public class VioChat extends JavaPlugin
                 for ( Player tempPlayer : e.getRecipients() )
                 {
                     String modPlayer = chat.getPlayerPrefix( tempPlayer ) + tempPlayer.getDisplayName( ) + chat.getPlayerSuffix( tempPlayer ) + m_szColor;
-                    raw = raw.replace( tempPlayer.getDisplayName( ), modPlayer );
+                    raw = raw.replace(  " " + tempPlayer.getDisplayName( ) + " " );
                 }
 
                 msg = msg.replace( "%username%", e.getPlayer( ).getDisplayName( ) );
